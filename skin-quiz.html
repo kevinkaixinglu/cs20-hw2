@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Geist:wght@100..900&family=Hind:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Solotion</title>
+    <style>
+        body {
+            background-color: #fbfbf4;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.04em;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif; 
+            color: #424530;
+            margin-left: 30px;
+            padding: 10px;
+            font-size: 23px
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                color: transparent; 
+            }
+            h1::before {
+                content: "S";
+                color: #424530;
+            }
+
+        }
+
+        @media (min-width: 1600px) {
+            h1 {
+                font-size: 36px; 
+            }
+        }
+
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-links {
+            display: flex;
+            margin-left: auto;
+            margin-right: 40px;
+            gap: 20px; 
+        }
+
+        .nav-links a {
+            font-family: 'Outfit', sans-serif; 
+            text-decoration: none;
+            color: #424530;
+            font-size: 16px;
+            transition: 0.3s;
+            top: 0;
+        }
+
+        .nav-links a:hover {
+            color: hsl(0, 0%, 53%);
+        }
+
+        @media (max-width: 552px) {
+            .nav-links a {
+                font-size: 10px;
+            }
+        }
+
+        .footer {
+            background-color: #424530;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            
+        }
+
+        .footer h1 {
+            font-family: 'Outfit', sans-serif; 
+            color: white;
+            font-size: 23px;
+            margin: 0;
+        }
+
+        .footer p {
+            margin: 0;
+            padding-right: 50px;
+            }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                font-size: 12px;
+            }
+        }
+
+        .skin-quiz-form {
+            display: flex;
+            flex-direction: column;
+        align-items: center;
+            padding-left: 20px;
+            padding-bottom: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+
+        <a href="index.html" style="text-decoration: none;">
+            <h1>S O L O T I O N</h1>
+        </a>
+        <div class="nav-links">
+            <a href="skin-quiz.html">Skin Quiz</a>
+            <a href="lotion.html">Lotion</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <form class="skin-quiz-form" action="#" >
+        <h2>Skin Type & Concerns</h2>
+        <label for="skin-type">How would you describe your skin type?</label><br>
+        <select id="skin-type" name="skin-type">
+            <option value="oily">Oily</option>
+            <option value="dry">Dry</option>
+            <option value="combination">Combination</option>
+            <option value="normal">Normal</option>
+            <option value="sensitive">Sensitive</option>
+        </select><br><br>
+
+        <label for="skin-concerns">Do you have any skin concerns?</label><br>
+        <select id="skin-concerns" name="skin-concerns" multiple>
+            <option value="acne">Acne</option>
+            <option value="eczema">Eczema</option>
+            <option value="rosacea">Rosacea</option>
+            <option value="dark-spots">Dark Spots</option>
+            <option value="wrinkles">Wrinkles</option>
+            <option value="redness">Redness</option>
+            <option value="uneven-texture">Uneven Texture</option>
+        </select><br><br>
+
+        <label for="skin-feel">How does your skin typically feel throughout the day?</label><br>
+        <select id="skin-feel" name="skin-feel">
+            <option value="tight">Tight</option>
+            <option value="dry">Dry</option>
+            <option value="oily">Oily</option>
+            <option value="balanced">Balanced</option>
+        </select><br><br>
+
+        <label for="allergies">Do you have any allergies or sensitivities to skincare ingredients?</label><br>
+        <input type="text" id="allergies" name="allergies"><br><br>
+
+        <h2>Moisturization & Texture Preferences</h2>
+        <label for="texture-preference">How rich or lightweight do you prefer your lotion to be?</label><br>
+        <select id="texture-preference" name="texture-preference">
+            <option value="gel-like">Gel-like</option>
+            <option value="lightweight">Lightweight</option>
+            <option value="medium">Medium</option>
+            <option value="rich-thick">Rich/Thick</option>
+        </select><br><br>
+
+        <label for="finish-preference">Do you prefer a matte or dewy finish?</label><br>
+        <select id="finish-preference" name="finish-preference">
+            <option value="matte">Matte</option>
+            <option value="dewy">Dewy</option>
+        </select><br><br>
+
+        <label for="absorption-preference">Would you like a fast-absorbing formula or something more hydrating and long-lasting?</label><br>
+        <select id="absorption-preference" name="absorption-preference">
+            <option value="fast-absorbing">Fast-absorbing</option>
+            <option value="hydrating">Hydrating and long-lasting</option>
+        </select><br><br>
+
+        <h2>Sun Protection & Environmental Factors</h2>
+        <label for="spf">Do you want your lotion to include SPF? If so, what level?</label><br>
+        <select id="spf" name="spf">
+            <option value="spf-15">SPF 15</option>
+            <option value="spf-30">SPF 30</option>
+            <option value="spf-50">SPF 50</option>
+        </select><br><br>
+
+        <label for="sun-exposure">How much time do you spend outdoors or in direct sunlight daily?</label><br>
+        <input type="text" id="sun-exposure" name="sun-exposure"><br><br>
+
+        <label for="environmental-exposure">Are you frequently exposed to pollution or harsh weather conditions?</label><br>
+        <input type="text" id="environmental-exposure" name="environmental-exposure"><br><br>
+
+        <h2>Time of Use & Occasion</h2>
+        <label for="time-of-use">When do you plan to use this lotion?</label><br>
+        <select id="time-of-use" name="time-of-use">
+            <option value="morning">Morning</option>
+            <option value="night">Night</option>
+            <option value="both">Both</option>
+        </select><br><br>
+
+        <label for="special-occasion">Do you need a special formulation for an event or occasion?</label><br>
+        <input type="text" id="special-occasion" name="special-occasion"><br><br>
+
+        <h2>Fragrance & Additional Ingredients</h2>
+        <label for="fragrance-preference">Do you prefer a fragrance-free formula, or would you like a scented option?</label><br>
+        <select id="fragrance-preference" name="fragrance-preference">
+            <option value="fragrance-free">Fragrance-free</option>
+            <option value="scented">Scented</option>
+        </select><br><br>
+
+        <label for="favorite-ingredients">Are there any specific ingredients you love in skincare?</label><br>
+        <input type="text" id="favorite-ingredients" name="favorite-ingredients"><br><br>
+
+        <label for="natural-ingredients">Do you have preferences for natural or organic ingredients?</label><br>
+        <input type="text" id="natural-ingredients" name="natural-ingredients"><br><br>
+
+        <h2>Ethical & Personal Preferences</h2>
+        <label for="ethical-preferences">Do you prefer vegan, cruelty-free, or sustainably sourced ingredients?</label><br>
+        <input type="text" id="ethical-preferences" name="ethical-preferences"><br><br>
+
+        <label for="free-of">Would you like a formula that is free of parabens, sulfates, silicones, or synthetic dyes?</label><br>
+        <input type="text" id="free-of" name="free-of"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="footer">
+        <h1>S</h1>
+        <p>All Rights Reserved 2014-2025 Solotion Inc</div>.</p>
+    </div>
+    
+</body>
+</html>

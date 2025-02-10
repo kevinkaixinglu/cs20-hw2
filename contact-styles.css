@@ -1,0 +1,141 @@
+body {
+    background-color: #fbfbf4;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.04em;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif; 
+    color: #424530;
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 23px
+}
+
+@media (max-width: 768px) {
+    h1 {
+        color: transparent; 
+    }
+    h1::before {
+        content: "S";
+        color: #424530;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    h1 {
+        font-size: 36px; 
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    margin-right: 40px;
+    gap: 20px; 
+}
+
+.nav-links a {
+    font-family: 'Outfit', sans-serif; 
+    text-decoration: none;
+    color: #424530;
+    font-size: 16px;
+    transition: 0.3s;
+    top: 0;
+}
+
+.nav-links a:hover {
+    color: hsl(0, 0%, 53%);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-form label {
+    color: #424530;
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #424530;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: hsl(0, 0%, 53%);
+}
+
+.footer {
+    background-color: #424530;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.footer h1 {
+    font-family: 'Outfit', sans-serif; 
+    color: white;
+    font-size: 23px;
+    margin: 0;
+}
+
+.footer p {
+    margin: 0;
+    padding-right: 50px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+    }
+}
+
+.submit-button {
+    font-family: 'Outfit', sans-serif;
+}

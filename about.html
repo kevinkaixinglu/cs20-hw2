@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Geist:wght@100..900&family=Hind:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Solotion</title>
+    <style>
+        body {
+            background-color: #fbfbf4;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.04em;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+            background-image: url('green-bottle.png');
+            background-size: contain;
+            background-position: center;
+            background-position: bottom;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif; 
+            color: #424530;
+            margin-left: 30px;
+            padding: 10px;
+            font-size: 23px
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                color: transparent; 
+            }
+            h1::before {
+                content: "S";
+                color: #424530;
+            }
+
+        }
+
+        @media (min-width: 1600px) {
+            h1 {
+                font-size: 36px; 
+            }
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-links {
+            display: flex;
+            margin-left: auto;
+            margin-right: 40px;
+            gap: 20px; 
+        }
+
+        .nav-links a {
+            font-family: 'Outfit', sans-serif; 
+            text-decoration: none;
+            color: #424530;
+            font-size: 16px;
+            transition: 0.3s;
+            top: 0;
+        }
+
+        .nav-links a:hover {
+            color: hsl(0, 0%, 53%);
+        }
+
+        @media (max-width: 552px) {
+            .nav-links a {
+                font-size: 10px;
+            }
+        }
+
+        .footer {
+            background-color: #424530;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            
+        }
+
+        .footer h1 {
+            font-family: 'Outfit', sans-serif; 
+            color: white;
+            font-size: 23px;
+            margin: 0;
+        }
+
+        .footer p {
+            margin: 0;
+            padding-right: 50px;
+            }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                font-size: 12px;
+            }
+        }
+
+        .description {
+            padding: 20px;
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-family: 'Outfit', sans-serif;
+            color: #424530;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 1.6;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" style="text-decoration: none;">
+            <h1>S O L O T I O N</h1>
+        </a>
+        <div class="nav-links">
+            <a href="skin-quiz.html">Skin Quiz</a>
+            <a href="lotion.html">Lotion</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    
+    <div class="description">
+        <p>At Solotion, we believe that skincare should be as unique as you are.
+            Specializing in custom lotions tailored to your skin's needs,
+            we offer expertly formulated solutions for face and body, 
+            designed for different times of the day, special occasions, 
+            and SPF protection or not-whatever suits your lifestyle. In 
+            addition to our customizable options, we provide a curated 
+            selection of top-of-the-line, ready-made lotions, crafted
+            with high-quality ingredients to deliver the best results 
+            at unbeatable prices. Whether you're looking for deep hydration,
+            sun protection, or a luxurious daily moisturizer, Solotion 
+            has the perfect formula for you.</p>
+    </div>
+
+    <div class="footer">
+        <h1>S</h1>
+        <p>All Rights Reserved 2014-2025 Solotion Inc</p>
+    </div>
+
+</body>
+</html>
